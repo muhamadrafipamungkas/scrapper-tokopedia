@@ -1,10 +1,10 @@
 import sys
-from scrapper import ScrapperTokopedia
+from scrapper import ScrapperShopee
 
 inp = sys.argv
-if(len(inp) == 2):
-    url = inp[1]
-    bl = ScrapperTokopedia(url)
-    bl.getPrice()
+if(len(inp) == 1):
+    print("Harap sertakan link produk Shopee")
 else:
-    print("Harap masukkan link produk")
+    coba = ScrapperShopee(str(inp[1]))
+    coba.getPrice()
+
