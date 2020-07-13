@@ -1,5 +1,5 @@
 import sys
-from tokped import ScrapperTokopedia
+from scrapper import ScrapperTokopedia
 
 inp = sys.argv
 if(len(inp) == 2):
